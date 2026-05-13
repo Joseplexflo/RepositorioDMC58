@@ -17,7 +17,7 @@ elif sesion == "Sesión 2":
 elif sesion == "Sesión 3":
   st.write("Bienvenido a la Sesión 3")
   
-else sesion == "Sesión 4":
+else:
   st.write("Bienvenido a la Sesión 4")
 
 
