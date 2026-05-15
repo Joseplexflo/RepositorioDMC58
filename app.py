@@ -34,10 +34,10 @@ elif sesion == "Sesión 3":
 
 else:
   st.write("Bienvenido a la Sesión 4")
-  principal = st.numbres_input("Ingrese el monto del prestamo",value=1000)
-  tasa_anual = st.numbres_input("Ingrese la tasa anual en decimal",value=0.1,min_value=0.0,max_value=1.0)
-  anios = st.numbres_input("Ingrese el numero de años del prestamo",value=1)
-  pagos_anio = st.numbres_input("Ingrese la cantidad de pagos por año",value=12)
+  principal = st.number_input("Ingrese el monto del prestamo",value=1000)
+  tasa_anual = st.number_input("Ingrese la tasa anual en decimal",value=0.1,min_value=0.0,max_value=1.0)
+  anios = st.number_input("Ingrese el numero de años del prestamo",value=1)
+  pagos_anio = st.number_input("Ingrese la cantidad de pagos por año",value=12)
   
   cuota = lf.cuota_prestamo(principal,tasa_anual,anios,pagos_anio)
   st.write(cuota)
